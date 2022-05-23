@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PRIMAPOX DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-20 12:01:06 "/>
+        <attribute name="created" value="UFJJTUFQT1ggREVMTDtCUlVOT0RFTEwtUEM7MjAyMi0wNC0yMDsiMTA6MzE6MTMgIjsyOTky"/>
+        <attribute name="edited" value="UFJJTUFQT1ggREVMTDtCUlVOT0RFTEwtUEM7MjAyMi0wNC0yMDsiMTI6MDE6MDYgIjsxOzMxMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limite" type="Integer" array="False" size=""/>
+            <assign variable="Numero" expression="0"/>
+            <assign variable="Limite" expression="10"/>
+            <while expression="Numero&lt;=Limite">
+                <output expression="&quot;9x&quot; &amp; Numero &amp; &quot; = &quot; &amp; Numero*9" newline="True"/>
+                <assign variable="numero" expression="numero+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

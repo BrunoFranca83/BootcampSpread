@@ -14,6 +14,8 @@
             padding: 0;
             display: flex;
             list-style: none;
+            max-width: 500px;
+            border: 3px solid black;
         }
 
         .flex-item{
@@ -23,7 +25,7 @@
             line-height: 50px;
             font-size: 20px;
             color: white;
-            text-align: center  ;
+            text-align: center;
             margin: 5px;
         }
 
@@ -31,9 +33,32 @@
             flex-direction: row;
         }
 
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+
         .row-reverse li{
             background: red;
         }
+
+        .column{
+            float: left;
+            flex-direction: column;
+        }
+
+        .column li{
+            background-color: orange;
+        }
+
+        .column-reverse{
+            float:right;
+            flex-direction: column-reverse;
+        }
+
+        .column-reverse li{
+            background-color: purple;
+        }
+
     </style>
 
 </head>
@@ -56,5 +81,22 @@
     <li class="flex-item">4</li>
     <li class="flex-item">5</li>
 </ul>
+
+<ul class="Flex-Container column">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+</ul>
+
+<ul class="Flex-Container column-reverse">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+</ul>
+
 </body>
 </html>

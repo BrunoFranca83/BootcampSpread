@@ -1,5 +1,3 @@
-//Aula Prática com Flex Wrap. Parei em 09:19
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +9,7 @@
         .flex-container{
             display: flex;
             height: 150px;
+            flex-direction: row;
             border: 2px solid black;
             max-width: 310px;
         }
@@ -21,6 +20,7 @@
             text-align: center;
             min-width: 100px;
             line-height: 50px;
+            
           
         }
         .nowrap{
@@ -29,6 +29,10 @@
 
         .wrap{
             flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
         }
         .blue{
             background-color: blue;
@@ -57,15 +61,24 @@
         <div class="item orange">4</div>
     </div>
     
-    <h1>wrap</h1>
-//Horizontalmente ele enche de elementos R
+    <h1>Wrap</h1>
+    //Horizontalmente ele enche de elementos e quando não dá mais ele enche "quebra a linha" pra baixo, respeitando o mínimo de width estabelecido.
     <div class="flex-container wrap">
         <div class="item green">1</div>
         <div class="item blue">2</div>
         <div class="item orange">3</div>
-        <div class="item orange">4</div>
+        <div class="item orange">4</div>     
     </div>
 
+    <h1>wrap reverse</h1>
+        //Horizontalmente ele enche de elementos e quando não dá mais ele enche "quebra a linha" pra CIMA, comerçando da direita pra esquerda.
+
+        <div class="flex-container wrap-reverse">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item orange">4</div>
+        </div>
 
 </body>
 </html>

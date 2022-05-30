@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 20px;
+            }
+
+            .item{
+                flex: 1;
+                background-color: brown;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin: 10px;
+                order: 0;
+            }
+
+            .ol-1{
+                order: 1;
+            }
+
+            .ol-2{
+                order: 2;
+            }
+
+            .ol-3{
+                order: 3;
+            }
+
+            .direction{
+                flex-direction: column;
+            }
+
+        </style>
+</head>
+
+
+<body>
+  
+    <h1>Row</h1>
+    <p>Order: 0</p>
+    <div class="flex-container">
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>
+       <div class="item">4</div> 
+    </div>
+
+    <p>Ordens diferentes</p>
+    <div class="flex-container">
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>
+       <div class="item">4n</div> 
+       <div class="item">4m</div> 
+     </div>
+
+    <h1>Column</h1>
+    <p>order: 0</p>
+    <div class="flex-container direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div> 
+     </div>
+ 
+     <p>Order diferentes</p>
+     <div class="flex-container direction">
+        <div class="item ol-3">1</div>
+        <div class="item ol-1">2</div>
+        <div class="item ol-3">7</div>
+        <div class="item ol-2">4n</div> 
+        <div class="item ol-3">4m</div> 
+        <div class="item ol-2">4n</div> 
+      </div>
+
+</body>
+</html>

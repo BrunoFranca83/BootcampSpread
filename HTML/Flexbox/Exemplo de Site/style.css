@@ -1,0 +1,9 @@
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+}
+
+.header{
+    background-color: blue;
+}

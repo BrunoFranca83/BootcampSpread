@@ -1,0 +1,12 @@
+body{
+    color: rgb(0, 0, 0);
+    background-color: beige;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    border-radius: 50%;
+    border-color: darkred;
+}
